@@ -4,7 +4,7 @@ import router from "./router.js";
 import fileUpload from "express-fileupload";
 import path from "path";
 import { Router } from "express";
-const PORT = 5000;
+const PORT = process.env.PORT || 80;
 
 const DB_URL = `mongodb+srv://user:user@cluster0.mwpeo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
